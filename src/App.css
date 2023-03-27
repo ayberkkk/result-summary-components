@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500;800&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,600&family=Nunito:wght@200;300;500;700;800&family=Patrick+Hand&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.component {
+    position: relative;
+    margin-top: 50px;
+}
+
+.result {
+    padding: 20px;
+    border-radius: 20px;
+    background: hsla(241, 81%, 54%, 1);
+
+    background: linear-gradient(90deg, hsla(241, 81%, 54%, 1) 10%, hsla(252, 100%, 67%, 1) 90%);
+
+    background: -moz-linear-gradient(90deg, hsla(241, 81%, 54%, 1) 10%, hsla(252, 100%, 67%, 1) 90%);
+
+    background: -webkit-linear-gradient(90deg, hsla(241, 81%, 54%, 1) 10%, hsla(252, 100%, 67%, 1) 90%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#2E2BE9", endColorstr="#7857FF", GradientType=1);
+    z-index: 2;
+}
+
+.text {
+    color: #c4c8eb;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+}
+
+.range {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid transparent;
+    background: hsla(256, 72%, 46%, 1);
+
+    background: linear-gradient(90deg, hsla(256, 72%, 46%, 1) 28%, hsla(241, 71%, 61%, 1) 87%);
+
+    background: -moz-linear-gradient(90deg, hsla(256, 72%, 46%, 1) 28%, hsla(241, 71%, 61%, 1) 87%);
+
+    background: -webkit-linear-gradient(90deg, hsla(256, 72%, 46%, 1) 28%, hsla(241, 71%, 61%, 1) 87%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4E21CA", endColorstr="#5754E2", GradientType=1);
+
+}
+
+.summary {
+    padding: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: -10px;
+    background: none;
+    z-index: 1;
+}
+
+.reaction-box {
+    background-color: #ff575737 !important;
+
+}
+
+.reaction {
+    color: #ff5757;
+}
+
+.memory-box {
+    background-color: #ffb11f3c !important;
+
+}
+
+.memory {
+    color: #ffb01f;
+}
+
+.verbal-box {
+    background-color: #00bd9123 !important;
+
+}
+
+.verbal {
+    color: #00bd91;
+}
+
+.visual-box {
+    background-color: #1124d42f !important;
+
+}
+
+.visual {
+    color: #1125d4;
+}
+
+.range-percent {
+    text-align: right;
+    color: hsl(224, 30%, 27%);
+}
+
+.range-percent>span {
+    opacity: 0.4;
+}
+
+.continue {
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px !important;
+    line-height: 35px;
+    margin-top: 20px;
+    background-color: hsl(224, 30%, 27%) !important;
+    transition: 0.4s;
+    background: transparent;
+}
+
+.continue:hover {
+    background: linear-gradient(170deg, hsl(252, 100%, 67%) 20%, hsl(241, 81%, 54%) 70%);
+}
+
+@media screen and (max-width:992px) {
+    .content {
+        width: 100%;
+    }
+
+    .component {
+        display: block !important;
+        margin-top: 0px;
+    }
+
+    .result,
+    .summary {
+        width: 100%;
+    }
+
+    .result {
+        padding: 1px !important;
+        border-radius: 0px;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+
+    .range {
+        width: 150px;
+        height: 150px;
+    }
+
+    .summary {
+        padding: 20px !important;
+        border-radius: 0px;
+        box-shadow: none !important;
+        margin-left: 0px !important;
+    }
+}
